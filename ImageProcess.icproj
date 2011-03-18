@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="gb2312"?>
+<VisualStudioProject
+	ProjectType="Intel C++ Project"
+	Version="11.1"
+	Name="ImageProcess"
+	ProjectGUID="{181882FA-6806-4CAE-A2A8-A35AB93E8834}"
+	VCNestedProjectGUID="{EF77482B-5E0E-4AA9-87EB-0B6832E943E6}"
+	VCNestedProjectFileName="ImageProcess.vcproj">
+	<Configurations/>
+	<Files/>
+</VisualStudioProject>

@@ -1,0 +1,636 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\ImageProcess.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#include ""afxprint.rc""       // 打印/打印预览资源\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ImageProcess.ico"
+IDR_ImageProcessTYPE    ICON                    "res\\ImageProcessDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "保存(&S)\tCtrl+S",              ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",                  ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&P)...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "打印预览(&V)",                    ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(&R)...",                 ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                       ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消(&U)\tCtrl+Z",              ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                     ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 ImageProcess(&A)...",      ID_APP_ABOUT
+    END
+END
+
+IDM_MAIN MENU 
+BEGIN
+    POPUP "文件"
+    BEGIN
+        MENUITEM "打开",                          ID_OPEN
+        MENUITEM "灰度化",                         ID_GRAY
+        MENUITEM "撤销",                          ID_Undo
+        MENUITEM "重做",                          ID_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "测试",                          ID_32848
+        MENUITEM SEPARATOR
+        MENUITEM "退出",                          ID_EXIT
+    END
+    POPUP "点运算"
+    BEGIN
+        MENUITEM "直方图",                         ID_HIST
+        MENUITEM SEPARATOR
+        MENUITEM "线性变换",                        32779
+        MENUITEM "对数变换",                        ID_32780
+        MENUITEM "伽马变换",                        ID_GRAMMA_TRAN
+        MENUITEM "均衡化变换",                       32784
+        MENUITEM "规定划变换",                       32785
+        MENUITEM "阈值变换",                        ID_THRESHOSD
+        MENUITEM SEPARATOR
+        MENUITEM "图像求反",                        ID_REVERSE
+    END
+    MENUITEM "几何运算",                        ID_32843
+    POPUP "空间域图像增强"
+    BEGIN
+        MENUITEM "平均平滑",                        ID_SPACE_AVG_SMOOTH
+        MENUITEM "高斯平滑",                        ID_SPACE_GAUSS_SMOOTH
+        MENUITEM "自适应高斯平滑",                     ID_SPACE_ADAPTER_SMOOTH
+        MENUITEM SEPARATOR
+        MENUITEM "中值滤波",                        ID_MID_FILTER
+        MENUITEM "低值滤波",                        ID_LOW_FILTER
+        MENUITEM "高值滤波",                        ID_HIGH_FILTER
+        MENUITEM SEPARATOR
+        MENUITEM "Sobel 滤波",                    ID_SOBEL
+        MENUITEM "Laplace 滤波",                  ID_LAPLACE
+        MENUITEM "LoG 滤波",                      ID_LOG
+        MENUITEM "LoG_Big 滤波",                  ID_LOG_BIG
+        MENUITEM "Gre 滤波",                      ID_TEXT
+    END
+    POPUP "频率域图像增强"
+    BEGIN
+        MENUITEM "傅里叶变换",                       ID_FFT
+        MENUITEM "逆傅里叶变换",                      ID_IFFT
+        MENUITEM SEPARATOR
+        MENUITEM "理想低通滤波",                      ID_IDEAL_LPF
+        MENUITEM "高斯低通滤波",                      ID_GAUSS_FILTER
+        MENUITEM SEPARATOR
+        MENUITEM "高斯高通滤波",                      ID_GAUSS_HPF
+        MENUITEM "拉普拉斯高通滤波",                    ID_LAPLACE_HFD
+    END
+    POPUP "形态学运算"
+    BEGIN
+        MENUITEM "正方形结构腐蚀",                     ID_SQUARE_ERODE
+        MENUITEM "十字形腐蚀",                       ID_CROSS_ERODE
+        MENUITEM SEPARATOR
+        MENUITEM "正方形膨胀",                       ID_SQUARE_DILATE
+        MENUITEM "十字形膨胀",                       ID_CROSS_DILATE
+        MENUITEM SEPARATOR
+        MENUITEM "正方形开运算",                      ID_SQUARE_OPEN
+        MENUITEM "十字形开运算",                      ID_CROSS_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "正方形闭运算",                      ID_SQUARE_CLOSE
+        MENUITEM "十字形开运算",                      ID_CROSS_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "查找边缘（简单）",                    ID_TRACE_BOUNDARY
+        MENUITEM SEPARATOR
+        MENUITEM "区域填充",                        ID_REGIN_FILL
+        MENUITEM SEPARATOR
+        MENUITEM "连通区域分量",                      ID_CONNECTION_REGION
+        MENUITEM SEPARATOR
+        MENUITEM "细化",                          ID_THINING
+        MENUITEM SEPARATOR
+        MENUITEM "像素化",                         ID_PIXEL_IMAGE
+        MENUITEM SEPARATOR
+        MENUITEM "凸壳",                          ID_CONVEX
+        MENUITEM SEPARATOR
+        MENUITEM "顶帽变换",                        ID_TOP_HAT
+    END
+    POPUP "杂项"
+    BEGIN
+        MENUITEM "去边",                          ID_EXCEPT_BORDER
+        MENUITEM "查找车牌",                        ID_PLATE_FIND
+        MENUITEM "蓝化",                          ID_BLUE_PLATE
+        MENUITEM "分割",                          ID_SPLIT
+        MENUITEM "识别",                          ID_READ
+        MENUITEM "直方图中值",                       ID_HIST_MID
+        MENUITEM "中值阈值变换",                      ID_HIST_MID_TRANS
+        MENUITEM "直方图谷值",                       ID_MIN_HIST
+        MENUITEM "谷值阈值变换",                      ID_HIST_MIN_TRANS
+        MENUITEM "值域阈值变换",                      ID_THREAD_HIST_TRAN
+        MENUITEM "水平投影",                        ID_VPROJECT
+        MENUITEM "垂直投影",                        ID_HPROJECT
+        MENUITEM "精细提取车牌",                      ID_PRE_FIND_PLATE
+        MENUITEM "字符分割阈值变换",                    ID_SPLIT_TRANS
+        MENUITEM "肤浅的值域阈值变换",                   ID_SWALLOW_HIST_TRAN
+        MENUITEM "半肤浅的值域阈值变换",                  ID_32891
+        MENUITEM "连通分量",                        ID_CON_REGIN
+        MENUITEM SEPARATOR
+        MENUITEM "神经网络训练",                      ID_BP_NET_TRAIN
+        MENUITEM "网格化",                         ID_GRID_IT
+        MENUITEM "神经网络识别",                      ID_NET_SIM
+        MENUITEM "正规化",                         ID_NORMAL
+        MENUITEM "刺激初始化",                       ID_SIM_INIT
+        MENUITEM SEPARATOR
+        MENUITEM "检测",                          ID_CHECKD
+        MENUITEM SEPARATOR
+        MENUITEM "图像批量",                        ID_PIC_OUT
+        MENUITEM SEPARATOR
+        MENUITEM "测试",                          32908
+        MENUITEM "条条区域",                        ID_STRIKE
+        MENUITEM SEPARATOR
+        MENUITEM "斜率阈值变换",                      ID_HIST_K
+    END
+    POPUP "通道"
+    BEGIN
+        MENUITEM "蓝色通道",                        ID_BLUE_PASSAGE
+        MENUITEM "批量",                          ID_AllDo
+        MENUITEM "大小适当",                        ID_SIZE_FIT
+        MENUITEM "重命名",                         ID_RENAME
+        MENUITEM "二值化批量",                       ID_BINARY_PIC
+        MENUITEM "图像校正",                        ID_RIGHT_IMAGE
+        MENUITEM SEPARATOR
+        MENUITEM "训练",                          ID_GJY_TRAIN
+        MENUITEM "识别",                          ID_GJY_REG
+        MENUITEM SEPARATOR
+        MENUITEM "标志化",                         ID_SIGN
+        MENUITEM "刺激初始化",                       ID_NEW_SIM_INITI
+        MENUITEM "显示",                          ID_32934
+        MENUITEM SEPARATOR
+        MENUITEM "真字符识别阈值",                     ID_32935
+        MENUITEM SEPARATOR
+        MENUITEM "真批量完成",                       ID_REAL_DO
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 ImageProcess"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "ImageProcess 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2010",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 267, 230
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 192, 74
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "系数Fa：",IDC_STATIC,7,7,54,12
+    LTEXT           "常量Fb：",IDC_STATIC,7,27,54,12
+    EDITTEXT        IDC_EDIT1,43,7,141,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,43,27,141,16,ES_AUTOHSCROLL
+    PUSHBUTTON      "确认变换",IDC_BUTTON1,131,50,54,17
+END
+
+IDD_DIALOG3 DIALOGEX 0, 0, 145, 47
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "参数Fc：",IDC_STATIC,7,7,35,14
+    EDITTEXT        IDC_EDIT1,43,7,95,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "确定",IDC_BUTTON1,86,26,52,15
+END
+
+IDD_DIALOG4 DIALOGEX 0, 0, 186, 80
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "参数Esp：",IDC_STATIC,7,7,36,16
+    LTEXT           "指数Gma：",IDC_STATIC,7,28,44,16
+    EDITTEXT        IDC_EDIT1,51,7,128,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,51,30,128,17,ES_AUTOHSCROLL
+    PUSHBUTTON      "确定",IDC_BUTTON1,124,54,55,19
+END
+
+IDD_DIALOG5 DIALOGEX 0, 0, 186, 48
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "阈值：",IDC_STATIC,7,7,60,16
+    EDITTEXT        IDC_EDIT1,39,7,140,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "确定",IDC_BUTTON1,119,23,60,18
+END
+
+IDD_DIALOG6 DIALOGEX 0, 0, 186, 46
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,43,7,136,12,ES_AUTOHSCROLL
+    LTEXT           "界限值：",IDC_STATIC,7,7,35,14
+    PUSHBUTTON      "确定",IDC_BUTTON1,112,22,67,17
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "ImageProcess.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "ImageProcess.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 223
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 185
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 138
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 41
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 73
+    END
+
+    IDD_DIALOG5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 41
+    END
+
+    IDD_DIALOG6, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 初始化失败。请确保 OLE 库是正确的版本。"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "ImageProcess\n\nImageProcess\n\n\nImageProcess.Document\nImageProcess.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "ImageProcess"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "创建新文档\n新建"
+    ID_FILE_OPEN            "打开现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "用新名称保存活动文档\n另存为"
+    ID_FILE_PAGE_SETUP      "更改打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "更改打印机选项和打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息、版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开此文档"
+    ID_FILE_MRU_FILE2       "打开此文档"
+    ID_FILE_MRU_FILE3       "打开此文档"
+    ID_FILE_MRU_FILE4       "打开此文档"
+    ID_FILE_MRU_FILE5       "打开此文档"
+    ID_FILE_MRU_FILE6       "打开此文档"
+    ID_FILE_MRU_FILE7       "打开此文档"
+    ID_FILE_MRU_FILE8       "打开此文档"
+    ID_FILE_MRU_FILE9       "打开此文档"
+    ID_FILE_MRU_FILE10      "打开此文档"
+    ID_FILE_MRU_FILE11      "打开此文档"
+    ID_FILE_MRU_FILE12      "打开此文档"
+    ID_FILE_MRU_FILE13      "打开此文档"
+    ID_FILE_MRU_FILE14      "打开此文档"
+    ID_FILE_MRU_FILE15      "打开此文档"
+    ID_FILE_MRU_FILE16      "打开此文档"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回上一个窗格\n上一窗格"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动窗口拆分为多个窗格\n拆分"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "清除选定内容\n清除"
+    ID_EDIT_CLEAR_ALL       "清除全部内容\n全部清除"
+    ID_EDIT_COPY            "复制选定内容并将其放到剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切选定内容并将其放到剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的文本\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一操作\n重复"
+    ID_EDIT_REPLACE         "用其他文本替换特定的文本\n替换"
+    ID_EDIT_SELECT_ALL      "选定整个文档\n全选"
+    ID_EDIT_UNDO            "撤消上一操作\n撤消"
+    ID_EDIT_REDO            "恢复上次撤消的操作\n重做"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n切换工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "更改窗口大小"
+    AFX_IDS_SCMOVE          "更改窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小为图标"
+    AFX_IDS_SCMAXIMIZE      "使窗口最大化显示"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到前一个文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务列表"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预览"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\ImageProcess.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"         // 标准组件
+#include "afxprint.rc"       // 打印/打印预览资源
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

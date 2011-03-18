@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImageProcess", "ImageProcess.vcproj", "{EF77482B-5E0E-4AA9-87EB-0B6832E943E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF77482B-5E0E-4AA9-87EB-0B6832E943E6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EF77482B-5E0E-4AA9-87EB-0B6832E943E6}.Debug|Win32.Build.0 = Debug|Win32
+		{EF77482B-5E0E-4AA9-87EB-0B6832E943E6}.Release|Win32.ActiveCfg = Release|Win32
+		{EF77482B-5E0E-4AA9-87EB-0B6832E943E6}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
